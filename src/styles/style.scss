@@ -1,0 +1,158 @@
+.App{
+    width: 600px;
+    margin: 50px auto 0;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25)
+}
+
+.inventory{
+    background: #f5f5f5;
+    padding: 10px;
+
+    ul{
+        display: flex;
+        border-bottom: 2px solid #222;
+        background: #fff;
+        font-weight: 600
+    }
+    li{
+        width: 33.33%;
+        text-align: center;
+        padding:  10px 0;
+        background: #fff;
+    }
+
+    ol{
+        display: flex;
+        margin-bottom: 3px;
+
+        &:last-of-type{
+            margin-bottom: 0
+        }
+    }
+}
+
+
+.buySell{
+    background: #fff;
+    border: 10px solid #f5f5f5;
+    margin-top: 10px;
+
+    .tabs{
+        display: flex;
+        border-bottom: 1px solid #e5e5e5;
+        div{
+            width: 50%;
+            padding: 20px 0;
+            text-align: center;
+            background: #fff;
+            cursor: pointer;
+
+            &.active{
+                background: #f00;
+                color: #fff;
+            }
+        }
+    }
+
+    .percentBtns{
+        display: flex;
+        justify-content: flex-end;
+        background: #fff;
+
+        span{
+            display: inline-block;
+            padding: 7px 15px;
+            background: #f5f5f5;
+            color: #222;
+            border-radius: 20px;
+            margin: 10px;
+            font-size: 14px;
+            width: 35px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+
+
+    .fields{
+        margin: 30px 20px 10px;
+        &>div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #999999;
+            margin-bottom: 10px;
+
+            .inputGroup{
+                border: 1px solid #b1b0b0;
+                border-radius: 10px;
+                width: 50%; 
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 10px;
+                input{
+                    border: none;
+                    height: 30px;
+                    line-height: 2.1;
+                    width: 100%;
+                    font-size: 16px;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                b{
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    .fee{
+        border-top: 2px solid #f00;
+        margin: 30px 20px;
+        p{
+            color: #888888;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .fee-fields{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+            color: #888888;
+
+            &.total{
+                font-size: 16px;
+                color: #222;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .actionBtns{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        button{
+            background: none;
+            padding: 15px 0;
+            width: 100%;
+            font-size: 16px;
+            background: #f00;
+            color: #fff;
+
+            &.reset{
+                background: #ececec;
+                color: #222;
+                width: 40%;
+                margin-right: 10px
+            }
+        }
+    }
+}
